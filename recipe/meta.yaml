@@ -12,9 +12,10 @@ source:
     patches:
       - improve-external-deps.patch
       - build-as-dynamic.patch
+      - prov-client.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not win64]
   run_exports:
     - {{ pin_subpackage(name, exact=True) }}
